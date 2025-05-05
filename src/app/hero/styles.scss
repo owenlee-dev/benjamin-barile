@@ -1,0 +1,16 @@
+.Hero {
+  h1 {
+    color: var(--light-neutral);
+    text-shadow: 0 0 4px var(--deep-accent);
+  }
+  svg {
+    color: var(--golden-note);
+  }
+  .just-ben {
+    width: 100vw;
+    height: 100vh;
+    img {
+      object-fit: contain;
+    }
+  }
+}

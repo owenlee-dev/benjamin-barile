@@ -1,0 +1,29 @@
+.Navbar {
+  li {
+    position: relative;
+    color: var(--light-neutral);
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--primary-accent);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--golden-note);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    &:hover::after {
+      transform-origin: right;
+      transform: scaleX(1);
+    }
+  }
+  h3 {
+    color: var(--primary-accent);
+  }
+}
