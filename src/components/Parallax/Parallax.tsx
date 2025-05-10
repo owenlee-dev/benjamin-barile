@@ -36,10 +36,18 @@ const Parallax = ({
   const { scrollY } = useScroll();
 
   const initial = elementTop - clientHeight;
-  const final = elementTop + offset;
+  const final = elementTop + clientHeight;
 
-  const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
-  const y = useSpring(yRange, springConfig);
+  // Transform the scroll position to a value between -1 and 1
+  const progress = useTransform(
+    scrollY,
+    [initial, elementTop, final],
+    [-1, 0, 1]
+  );
+
+  // Apply the offset as a weight to the progress
+  const y = useTransform(progress, [-1, 0, 1], [offset, 0, -offset]);
+  const springY = useSpring(y, springConfig);
 
   useLayoutEffect(() => {
     const element = ref.current;
@@ -61,7 +69,7 @@ const Parallax = ({
   }
 
   return (
-    <motion.div ref={ref} style={{ y }}>
+    <motion.div ref={ref} style={{ y: springY }}>
       {children}
     </motion.div>
   );

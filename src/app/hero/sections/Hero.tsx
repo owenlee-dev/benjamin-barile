@@ -23,40 +23,37 @@ const Hero = () => {
 
   return (
     <section
-      className="Hero relative h-screen flex items-center justify-center"
+      className="Hero"
       style={{
         backgroundImage: "url('/hero/just-bg.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="w-full text-center">
-        <div className="hero-text w-[80vw] align-right overflow-visible absolute right-0 top-1/2 my-10 p-4 transform -translate-y-1/2">
+      <div className="hero-container">
+        <div className="hero-text">
           <Parallax offset={40}>
-            <h1
-              ref={headingRef}
-              className="displayFont leading-none text-right text-flamenco-charcoal"
-            >
+            <h1 ref={headingRef} className="displayFont">
               <span>
-                Benjamin <br /> Barile
+                Benjamin <br /> Barrile
               </span>
             </h1>
           </Parallax>
         </div>
         <Parallax offset={-20}>
-          <div className="just-ben">
-            <Image
-              src="/hero/just-ben.png"
-              alt="Hero"
-              fill
-              priority
-              className="object-cover"
-            />
-          </div>
+          <div
+            className="just-ben"
+            style={{
+              backgroundImage: "url(/hero/just-ben.png)",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "33.33% 33.33%",
+            }}
+          ></div>
         </Parallax>
       </div>
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="scroll-indicator"
         animate={{
           y: [0, 10, 0],
         }}
