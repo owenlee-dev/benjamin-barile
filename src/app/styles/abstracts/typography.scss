@@ -1,0 +1,73 @@
+@use "./mixins" as *;
+@use "./layout" as *;
+
+:root {
+  --base-size: 24px;
+  --scale: 1.2; /* Minor third scale ratio */
+  --line-height: 1.6;
+}
+
+.text-xs {
+  font-size: calc(var(--base-size) / var(--scale));
+  line-height: var(--line-height);
+}
+
+.text-sm {
+  font-size: var(--base-size);
+  line-height: var(--line-height);
+}
+
+.text-md {
+  font-size: calc(var(--base-size) * var(--scale));
+  line-height: var(--line-height);
+}
+
+.text-lg {
+  font-size: calc(var(--base-size) * var(--scale) * var(--scale));
+  line-height: var(--line-height);
+}
+
+.text-xl {
+  font-size: calc(
+    var(--base-size) * var(--scale) * var(--scale) * var(--scale)
+  );
+  line-height: var(--line-height);
+}
+
+.text-2xl {
+  font-size: calc(
+    var(--base-size) * var(--scale) * var(--scale) * var(--scale) * var(--scale)
+  );
+  line-height: var(--line-height);
+}
+
+h1 {
+  @extend .text-2xl;
+  font-weight: 500;
+}
+
+h2 {
+  @extend .text-xl;
+  font-weight: 500;
+}
+
+h3 {
+  @extend .text-lg;
+  font-weight: 700;
+}
+
+h4 {
+  @extend .text-md;
+  font-weight: 400;
+}
+
+p {
+  @extend .text-sm;
+  @extend .text-wrapper;
+  font-weight: 400;
+}
+
+small {
+  @extend .text-xs;
+  font-weight: 300;
+}

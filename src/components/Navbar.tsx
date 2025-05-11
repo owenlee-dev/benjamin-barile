@@ -53,14 +53,16 @@ export default function Navbar() {
               <a href="/about">Contact</a>
             </motion.li>
           </motion.ul>
-          <motion.button
-            className={`hamburger-menu ${isMobileMenuOpen ? "open" : ""}`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <div className="hamburger-line" />
-            <div className="hamburger-line" />
-            <div className="hamburger-line" />
-          </motion.button>
+          <div className="hamburger-backdrop">
+            <motion.button
+              className={`hamburger-menu ${isMobileMenuOpen ? "open" : ""}`}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <div className="hamburger-line" />
+              <div className="hamburger-line" />
+              <div className="hamburger-line" />
+            </motion.button>
+          </div>
         </LayoutGroup>
       </motion.nav>
       <MobileMenu

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
 import fitty from "fitty";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Parallax from "@/components/Parallax/Parallax";
 

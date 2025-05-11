@@ -1,0 +1,21 @@
+@use "./abstracts" as *;
+
+@import "tailwindcss";
+@import "./_reset.css";
+
+.displayFont {
+  font-family: "chorine-large", sans-serif;
+}
+
+.bodyFont {
+  font-family: "acumin-pro-condensed", sans-serif;
+}
+
+body {
+  background-color: var(--light-neutral);
+  color: var(--dark-neutral);
+  font-family: "acumin-pro-condensed", sans-serif;
+  * {
+    // outline: 1px solid lime;
+  }
+}
