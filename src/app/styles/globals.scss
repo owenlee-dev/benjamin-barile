@@ -1,7 +1,6 @@
 @use "./abstracts" as *;
-
-@import "tailwindcss";
-@import "./_reset.css";
+@use "tailwindcss" as *;
+@use "./_reset.css" as *;
 
 .display-font {
   font-family: "chorine-large", sans-serif;
