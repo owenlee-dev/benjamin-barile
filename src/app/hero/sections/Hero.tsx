@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-text">
           <Parallax offset={40}>
-            <h1 ref={headingRef} className="displayFont">
+            <h1 ref={headingRef} className="display-font">
               <span>
                 Benjamin <br /> Barrile
               </span>

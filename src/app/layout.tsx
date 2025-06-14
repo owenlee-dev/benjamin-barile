@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/globals.scss";
-import Navbar from "@/components/Navbar";
+import ClientLayout from "./ClientLayout";
 
 export const metadata: Metadata = {
   title: "Benjamin Barrile",
@@ -21,8 +21,7 @@ export default function RootLayout({
       <body
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

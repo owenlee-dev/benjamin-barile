@@ -1,5 +1,4 @@
 "use client";
-
 import TrackList from "@/components/TrackList/TrackList";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -48,7 +47,7 @@ export default function RecentRelease() {
           ))}
         </div>
       </div>
-      <div className="music-info-container">
+      <div className="music-info-container section-wrapper">
         <div className="music-info">
           {producerInfo.map((info) => (
             <ProducerInfo key={info.title} {...info} />
@@ -94,7 +93,7 @@ export interface ProducerInfoProps {
 }
 const ProducerInfo = ({ title, name, subName }: ProducerInfoProps) => {
   return (
-    <div className="ProducerInfo">
+    <div className="ProducerInfo ">
       <span className="title">{title}</span>
       <div className="dashed-grow-divider"></div>
       <div className="name-container">

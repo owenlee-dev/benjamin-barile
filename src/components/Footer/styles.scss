@@ -1,0 +1,33 @@
+.Footer {
+  background-color: var(--primary-accent);
+  padding: 2rem;
+  color: var(--light-neutral);
+  width: 100%;
+  .wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    .footer-content {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .copyright {
+        line-height: 1;
+        p:last-child {
+          color: var(--dark-light-neutral);
+        }
+      }
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      .social-icon {
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+    }
+  }
+}

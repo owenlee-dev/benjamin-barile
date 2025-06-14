@@ -69,11 +69,7 @@ export const availableOnImages = [
     alt: "Available on Deezer",
     link: "#",
   },
-  {
-    src: "/album/available-on/spotify.png",
-    alt: "Available on Spotify",
-    link: "#",
-  },
+
   {
     src: "/album/available-on/band-camp.png",
     alt: "Available on Bandcamp",
