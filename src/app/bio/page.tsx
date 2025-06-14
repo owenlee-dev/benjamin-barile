@@ -46,10 +46,10 @@ const Bio = () => {
           Caroline Planté. He also has a 2020 Canadian Folk Music Award
           nomination for Instrumental Solo Artist of the Year. <br />
           <br />
-          Benjamin's debut album 'Esperando el Alba' ('Waiting for Dawn')
-          reflects upon his long and arduous battle with musician's focal
-          dystonia, an all too often career-ending neurological condition for
-          many musicians.
+          Benjamin&apos;s debut album &apos;Esperando el Alba&apos;
+          (&apos;Waiting for Dawn&apos;) reflects upon his long and arduous
+          battle with musician&apos;s focal dystonia, an all too often
+          career-ending neurological condition for many musicians.
         </p>
       </div>
     </div>

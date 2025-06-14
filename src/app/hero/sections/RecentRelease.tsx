@@ -43,7 +43,7 @@ export default function RecentRelease() {
       <div className="available-on-container">
         <div className="flex-wrap">
           {availableOnImages.map((image, index) => (
-            <WipeInImage key={image.src} src={image.src} alt={image.alt} />
+            <WipeInImage key={index} src={image.src} alt={image.alt} />
           ))}
         </div>
       </div>
