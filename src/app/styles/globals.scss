@@ -11,6 +11,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--light-neutral);
   color: var(--dark-neutral);
   font-family: "acumin-pro-condensed", sans-serif;
